@@ -1,12 +1,16 @@
 package com.muhammet.services;
 
 import com.muhammet.repository.IPersonelRepository;
-import lombok.RequiredArgsConstructor;
+import com.muhammet.repository.entity.Personel;
+import com.muhammet.utility.ServiceManager;
+
 import org.springframework.stereotype.Service;
 
 @Service
-@RequiredArgsConstructor
-public class PersonelService {
+public class PersonelService extends ServiceManager<Personel,Long> {
     private final IPersonelRepository repository;
-
+    public PersonelService(IPersonelRepository repository) {
+        super(repository);
+        this.repository = repository;
+    }
 }
