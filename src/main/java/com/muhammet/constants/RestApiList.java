@@ -18,9 +18,11 @@ public class RestApiList {
     public static final String PERSONELDEPARTMAN = API+VERSION+"/personeldepartman";
 
     public static final String SAVE = "/save";
+    public static final String SAVEDTO = "/savedto";
     public static final String UPDATE = "/update";
     public static final String DELETE = "/delete";
     public static final String FINDALL = "/findall";
 
+    public static final String FINALLVWUSER = "/findallvwuser";
 
 }
