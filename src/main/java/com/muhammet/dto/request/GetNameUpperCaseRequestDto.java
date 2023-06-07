@@ -1,4 +1,4 @@
-package com.muhammet.dto.reponse;
+package com.muhammet.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,9 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Builder
-public class FindAllVwUserResponseDto {
- Long id;
- String ad;
- String photo;
- String acildurumkisisi;
+public class GetNameUpperCaseRequestDto {
+    String name;
 }
